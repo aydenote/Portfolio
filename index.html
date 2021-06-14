@@ -4,15 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SS's Portfolio</title>
+
     <!--북마크 및 즐겨찾기시 나오는 타이틀-->
+    <title>SS's Portfolio</title>
+
     <meta
       name="description"
       content="Portfolio for world-renowed software engieer SS"
     />
     <meta name="author" content="SS" />
-    <link rel="icon" type="image/png" href="images/logo.png" />
+
     <!--북마크 및 즐겨찾기시 나오는 로고(favicon)-->
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
@@ -25,8 +28,92 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+
     <!--defer 는 html이 pursing되는 동안 동시에 js 파일을 다운로드 받는다. 다만, html이 pursing이 완료된 후 js파일을 실행한다.-->
+    <script src="main.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!--Navbar-->
+    <section id="narvbar">
+      <div class="nacbar__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">Seungsoo</a>
+      </div>
+      <div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My work</li>
+          <li class="navbar__menu__item">Testimonials</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+    </section>
+    <section id="home">
+      <img
+        src="images/profile.png"
+        alt="Ayden's Profile"
+        class="home__avatar"
+      />
+      <h1 class="home__title">
+        Hello, <br />
+        I'm Ayden
+      </h1>
+      <h2 class="home__description">Frontend Egnineer, in Inchoen</h2>
+      <button>contact me</button>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <h1>About me</h1>
+      <p>
+        반도체 회사 IT 부서에서 5년 동안 근무 중이며, HTML, CSS, Javascript를
+        사용하여 사내 동아리 페이지 제작 경험이 있습니다.
+      </p>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <div class="major__title">Frontend</div>
+          <div class="major__description">HTML</div>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div class="major__title">Frontend</div>
+          <div class="major__description">CSS</div>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <div class="major__title">Frontend</div>
+          <div class="major__description">Javascript</div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <img
+            src="images/job__logo.png"
+            alt="about__job__logo"
+            class="job__logo"
+          />
+          <p class="job__name">On semiconductor</p>
+          <p class="job__period">2016.03 ~ ing</p>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills"></section>
+    <!-- Work -->
+    <section id="work"></section>
+    <!-- Testimonials -->
+    <section id="testimonials"></section>
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
 </html>
