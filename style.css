@@ -12,6 +12,8 @@
   --color-yellow: #fff7d1;
   --color-orange: feb546;
   --color-black: #000000;
+  --color-light-blue: #e5ffff;
+  --color-dark-Emerald: #00acc1;
 
   /* Font size */
   --font-large: 48px;
@@ -26,11 +28,24 @@
   --weight-regular: 400;
 
   /* size */
+  --size-border-raidus: 4px;
 }
 
 /* Universal tags */
 * {
   box-sizing: border-box; /* padding을 넣었을 때, 높이 너비가 box 사이즈에 포함 */
+}
+body {
+  margin: 0;
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 /* Typography */
@@ -60,5 +75,69 @@ p {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-light-blue);
+  align-items: center;
+  padding-left: 16px;
+}
+
+.navbar__menu {
+  display: flex;
+}
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0 4px;
+  color: var(--color-dark-Emerald);
+  cursor: pointer;
+  border-radius: var(--size-border-raidus);
+}
+.navbar__menu__item {
+  border: 1px solid var(--color-dark-white);
+}
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-pink);
+}
+
+/* Home */
+#home {
+  background: url("images/logo.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+.home__contact {
+  font-size: var(--font-regular);
+  color: var(--color-white);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: calc(var(--size-border-raidus) * 2);
 }
 font-family: "Open Sans", sans-serif;
