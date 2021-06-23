@@ -10,7 +10,7 @@
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
-  --color-orange: feb546;
+  --color-orange: #fb8c00;
   --color-black: #000000;
   --color-light-blue: #e5ffff;
   --color-dark-Emerald: #00acc1;
@@ -29,6 +29,9 @@
 
   /* size */
   --size-border-raidus: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -117,7 +120,7 @@ button {
 /* Home */
 #home {
   background: url("images/logo.png") center/cover no-repeat;
-  padding: 40px;
+  padding: 160px;
   text-align: center;
 }
 
@@ -140,4 +143,68 @@ button {
   border: 2px solid var(--color-white);
   border-radius: calc(var(--size-border-raidus) * 2);
 }
-font-family: "Open Sans", sans-serif;
+
+/* Section common */
+section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+.major__description {
+  font-size: var(--font-small);
+}
+
+.major__icon svg {
+  transition: all var(--animation-duration) ease;
+}
+.major__icon:hover svg {
+  color: var(--color-dark-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+.job img {
+  width: 100px;
+  height: 100px;
+}
+.job__name,
+.job__period {
+  color: var(--color-light-grey);
+}
+.job__name {
+  font-size: var(--font-small);
+}
+.job__period {
+  font-size: var(--font-micro);
+}
