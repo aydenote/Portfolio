@@ -359,3 +359,38 @@ span {
 }
 
 /* Testimonials */
+#testimonials {
+  background-color: var(--color-light-white);
+}
+
+.testimonial {
+  margin: 40px;
+  display: flex;
+}
+
+.testimonial__avatar {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* 자식 요소가 홀수 일때와 짝수 일때 */
+.testimonial__avatar:nth-child(odd) {
+  margin-right: 20px;
+}
+.testimonial__avatar:nth-child(even) {
+  margin-left: 20px;
+}
+
+.testimonial__speech-bubble {
+  padding: 18px;
+  background-color: var(--color-white);
+  margin: 0 12px;
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-light-grey);
+}
+
+.testimonial__speech-bubble a {
+  color: var(--color-pink);
+}
