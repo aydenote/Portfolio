@@ -88,6 +88,10 @@ button {
 }
 
 /* Navbar */
+.navbar__container {
+  display: flex;
+  justify-content: center;
+}
 #navbar {
   display: flex;
   position: fixed;

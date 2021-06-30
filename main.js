@@ -10,3 +10,18 @@ document.addEventListener('scroll', ()=>{
         navbar.classList.remove('navbar__dark');
     }
 })
+
+
+// Navbar 메뉴 클릭시 스크롤 이동
+const navbarMenu= document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (event)=>{
+     
+    if(event.target.dataset.link == null){
+        return
+    } onclick(event.target.dataset.link);
+})
+
+function onclick(event){
+    document.getElementById(event).scrollIntoView({behavior: 'smooth'});
+}
+
