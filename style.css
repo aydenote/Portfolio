@@ -106,7 +106,6 @@ button {
 }
 #navbar.navbar__dark {
   background-color: var(--color-dark-pink);
-  opacity: 0.8;
 }
 
 .navbar__menu {

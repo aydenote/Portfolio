@@ -1,4 +1,6 @@
 'use strict'
+
+
 // Navbar 투명화
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
@@ -10,7 +12,6 @@ document.addEventListener('scroll', ()=>{
         navbar.classList.remove('navbar__dark');
     }
 })
-
 
 // Navbar 메뉴 클릭시 스크롤 이동
 const navbarMenu= document.querySelector('.navbar__menu');
@@ -40,3 +41,10 @@ function scrollIntoView(selector){
 
 }
 
+// 스크롤시 HOME content 투명화
+
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', ()=>{
+  home.style.opacity= 1 - window.scrollY / homeHeight;
+})
