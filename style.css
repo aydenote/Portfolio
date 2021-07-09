@@ -96,11 +96,11 @@ button {
   display: flex;
   position: fixed;
   width: 100%;
-  height: 50px;
+  height: 60px;
   justify-content: space-between;
   background-color: transparent;
   align-items: center;
-  padding: 0;
+  padding: 16px 0px;
   transition: all var(--animation-duration) ease-in;
   z-index: 1;
 }
@@ -131,7 +131,7 @@ button {
   border: 1px solid var(--color-dark-white);
 }
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  background-color: #ef9a9a;
 }
 
 .navbar__toggle_button {
@@ -390,7 +390,7 @@ span {
   display: block;
   position: relative;
   left: 50%;
-  width: 25px;
+  width: 40px;
   height: 2px;
   margin-left: -12px;
   margin-top: 8px;
@@ -477,6 +477,7 @@ span {
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--animation-duration) ease-in;
+  cursor: pointer;
 }
 
 .arrow-up.visible {
@@ -492,6 +493,20 @@ span {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-pink);
+  }
+  .navbar__logo {
+    position: relative;
+    bottom: 4px;
+  }
+  .navbar__menu.open {
+    display: block;
+    background-color: var(--color-dark-pink);
+    margin: 0%;
+  }
+
+  .navbar__menu__item {
+    border: 0;
   }
 
   .navbar__menu {

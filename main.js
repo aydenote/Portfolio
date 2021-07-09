@@ -20,9 +20,16 @@ navbarMenu.addEventListener('click', (event)=>{
     if(link == null){
         return
     } 
+    navbarMenu.classList.remove('open');
     scrollIntoView(link);
 });
 
+// navbar 토글 버튼 
+const toggleBtn = document.querySelector('.navbar__toggle_button');
+
+toggleBtn.addEventListener('click', ()=>{
+    navbarMenu.classList.toggle('open');
+})
 
 // home__ contact me! button 클릭시 스크롤 이동
 const contactMe= document.querySelector('.home__contact');
@@ -96,4 +103,5 @@ workBtnContainer.addEventListener('click', (event)=>{
         projectContainer.classList.remove('anim-out');},300);
     
 })
+
 
