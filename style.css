@@ -299,14 +299,14 @@ section {
   padding: 8px 48px;
   width: 225px;
 }
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-dark-pink);
   color: var(--color-white);
   cursor: pointer;
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;

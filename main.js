@@ -23,11 +23,12 @@ navbarMenu.addEventListener('click', (event)=>{
     scrollIntoView(link);
 });
 
+
 // home__ contact me! button 클릭시 스크롤 이동
 const contactMe= document.querySelector('.home__contact');
 contactMe.addEventListener('click', (event)=>{
     const link = event.target.dataset.link;
-     if(link== null){
+    if(link== null){
         return
     } 
     
@@ -76,6 +77,11 @@ workBtnContainer.addEventListener('click', (event)=>{
         return;
     }
 
+    const selected = document.querySelector('.category__btn.selected');
+     selected.classList.remove('selected');
+    const target = event.target.nodeName === 'BUTTON' ? event.target : event.target.parentNode;
+    target.classList.add('selected');
+
     projectContainer.classList.add('anim-out');
     
 
@@ -90,3 +96,4 @@ workBtnContainer.addEventListener('click', (event)=>{
         projectContainer.classList.remove('anim-out');},300);
     
 })
+
