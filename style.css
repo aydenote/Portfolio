@@ -105,7 +105,7 @@ button {
   z-index: 1;
 }
 #navbar.navbar__dark {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-pink);
 }
 
 .navbar__menu {
@@ -287,6 +287,8 @@ section {
 .etc {
   padding: 20px;
 }
+
+/* Work */
 .work__categories {
   margin: 40px;
 }
@@ -301,6 +303,7 @@ section {
 .category__btn:hover {
   background-color: var(--color-dark-pink);
   color: var(--color-white);
+  cursor: pointer;
 }
 
 .category__btn.active .category__count,
@@ -327,6 +330,8 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
 }
 
 .project {
@@ -339,6 +344,15 @@ section {
   margin: 2px;
   padding: 30px;
   background-color: var(--color-light-white);
+}
+
+.project.invisible {
+  display: none;
+}
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.9) translateY(40px);
 }
 
 .project__img {
