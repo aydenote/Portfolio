@@ -434,7 +434,7 @@ span {
 .testimonial__speech-bubble {
   padding: 18px;
   background-color: var(--color-white);
-  margin: 0 12px;
+  margin: 10px 12px;
 }
 
 .testimonial__speech-bubble p {
@@ -506,6 +506,10 @@ span {
     align-items: flex-start;
     background-color: var(--color-pink);
   }
+  section {
+    padding: 16px;
+    padding-top: 40px;
+  }
 
   .navbar__menu.open {
     display: block;
@@ -535,6 +539,9 @@ span {
   .skillset {
     flex-direction: column;
   }
+  .category__btn {
+    margin: 4px 0;
+  }
   .project {
     flex-grow: 1;
   }
@@ -556,5 +563,15 @@ span {
 
   .testimonial__speech-bubble {
     order: 1;
+    margin-bottom: 10px;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
