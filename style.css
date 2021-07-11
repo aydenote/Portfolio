@@ -39,7 +39,7 @@
   box-sizing: border-box; /* padding을 넣었을 때, 높이 너비가 box 사이즈에 포함 */
 }
 body {
-  margin: 0;
+  margin: 0 10px;
   cursor: default;
 }
 a {
@@ -103,6 +103,7 @@ button {
   padding: 16px 0px;
   transition: all var(--animation-duration) ease-in;
   z-index: 1;
+  will-change: contents;
 }
 #navbar.navbar__dark {
   background-color: var(--color-pink);
@@ -112,6 +113,9 @@ button {
   display: flex;
 }
 .navbar__logo {
+  position: relative;
+  bottom: 4px;
+  left: 25px;
   color: var(--color-light-white);
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
@@ -144,15 +148,16 @@ button {
 /* Home */
 #home {
   background: url("images/logo.png") center/cover no-repeat;
-  padding: 160px;
   text-align: center;
+  height: 600px;
 }
 
 .home__avatar {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 2px solid var(--color-light-white);
+  margin-top: 60px;
 }
 .home__title,
 .home__description {
@@ -168,10 +173,13 @@ button {
   border-radius: calc(var(--size-border-raidus) * 2);
 }
 
+.home__contact:hover {
+  background-color: var(--color-orange);
+}
+
 /* Section common */
 section {
   text-align: center;
-  padding: 50px;
   max-width: 1200px;
   margin: auto;
 }
@@ -181,6 +189,7 @@ section {
   display: flex;
   justify-content: space-between;
   margin: 80px 0;
+  text-align: center;
 }
 
 .major__icon {
@@ -290,7 +299,7 @@ section {
 
 /* Work */
 .work__categories {
-  margin: 40px;
+  margin: 12px 0;
 }
 .category__btn {
   border: 1px solid var(--color-dark-white);
@@ -468,7 +477,7 @@ span {
   font-size: 40px;
   position: fixed;
   bottom: 20px;
-  right: 10px;
+  right: 55px;
   width: 50px;
   height: 50px;
   color: var(--color-dark-white);
@@ -486,19 +495,17 @@ span {
 }
 
 /* For below 768px screen width */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .navbar__toggle_button {
     display: block;
   }
   #navbar {
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     background-color: var(--color-pink);
   }
-  .navbar__logo {
-    position: relative;
-    bottom: 4px;
-  }
+
   .navbar__menu.open {
     display: block;
     background-color: var(--color-dark-pink);
@@ -530,6 +537,7 @@ span {
   .project {
     flex-grow: 1;
   }
+
   .testimonial__avatar {
     width: 80px;
     height: 80px;
