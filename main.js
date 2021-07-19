@@ -11,6 +11,7 @@ document.addEventListener('scroll', ()=>{
     } else {
         navbar.classList.remove('navbar__dark');
     }
+    
 });
 
 // Navbar 메뉴 클릭시 스크롤 이동
@@ -25,7 +26,7 @@ navbarMenu.addEventListener('click', (event)=>{
 });
 
 // navbar 토글 버튼 
-const toggleBtn = document.querySelector('.navbar__toggle_button');
+const toggleBtn = document.querySelector('.navbar__toggle__button');
 
 toggleBtn.addEventListener('click', ()=>{
     navbarMenu.classList.toggle('open');
@@ -42,11 +43,6 @@ contactMe.addEventListener('click', (event)=>{
     scrollIntoView(link);
 });
 
-// 스크롤 이동 
-function scrollIntoView(selector){
-    const scrollTo= document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior: 'smooth'});
-};
 
 // 스크롤시 HOME content 투명화
 
@@ -104,4 +100,68 @@ workBtnContainer.addEventListener('click', (event)=>{
     
 })
 
+// 스크롤시 해당 Menu item들 색 표시.
+const sectionIds = [
+    '#home',
+    '#about',
+    '#skills',
+    '#work',
+    '#testimonials',
+    '#contact',
+  ];
+  const sections = sectionIds.map(id => document.querySelector(id));
 
+  const navItems = sectionIds.map(id =>
+    document.querySelector(`[data-link="${id}"]`)
+  );
+  
+  
+  let selectedNavIndex = 0;
+  let selectedNavItem = navItems[0];
+  function selectNavItem(selected) {
+    selectedNavItem.classList.remove('active');
+    selectedNavItem = selected;
+    selectedNavItem.classList.add('active');
+  }
+  
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3,
+  };
+  
+  const observerCallback = (entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+        const index = sectionIds.indexOf(`#${entry.target.id}`);
+        // 스크롤링이 아래로 되어서 페이지가 올라옴
+        if (entry.boundingClientRect.y < 0) {
+          selectedNavIndex = index + 1;
+        } else {
+          selectedNavIndex = index - 1;
+        }
+      }
+    });
+  };
+  
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+sections.forEach(section => observer.observe(section));
+
+// 스크롤 이동 
+function scrollIntoView(selector){
+    const scrollTo= document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: 'smooth'});
+    selectNavItem(navItems[sectionIds.indexOf(selector)]);
+};
+    
+window.addEventListener('wheel', ()=>{
+    // 스크롤이 제일 위에 이동시
+    if(window.scrollY === 0){
+        selectedNavIndex = 0;
+    }
+    // 제일 밑으로 스크롤 이동시
+    else if(Math.round(window.scrollY + window.innerHeight) === document.body.clientHeight){
+        selectedNavIndex = navItems.length - 1;
+    }
+    selectNavItem(navItems[selectedNavIndex]);
+})
