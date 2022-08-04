@@ -29,7 +29,6 @@
     />
     <link rel="stylesheet" href="style.css" />
 
-    <!--defer 는 html이 pursing되는 동안 동시에 js 파일을 다운로드 받는다. 다만, html이 pursing이 완료된 후 js파일을 실행한다.-->
     <script src="main.js" defer></script>
   </head>
   <body>
@@ -62,15 +61,14 @@
     <section id="home">
       
         <img
-          src="images/profile.png"
+          src="../images/프로필.jpg"
           alt="Ayden's Profile"
           class="home__avatar"
         />
         <h1 class="home__title">
-          Hello, <br />
-          I'm Ayden
+          안녕하세요, <br />
+          사용자 중심으로 사고하는 개발자 최승수입니다.
         </h1>
-        <h2 class="home__description">Frontend Egnineer, in Inchoen</h2>
         <button class="home__contact" data-link="#contact">
           contact me !!!
         </button>
@@ -79,10 +77,8 @@
     <!-- About -->
     <section id="about">
       <h1>About me</h1>
-      <p>
-        반도체 회사 IT 부서에서 5년 동안 근무 중이며, HTML, CSS, Javascript를
-        사용하여 사내 동아리 페이지 제작 경험이 있습니다.
-      </p>
+      <p>사용자 환경 개선에 가치를 알고 사용자 중심으로 생각하기 위해 노력 중입니다.</p>
+      <p>협업의 가치를 소중하게 생각하고 함께 일하고 싶은 개발자를 목표로 성장하고 있습니다.</p>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
@@ -111,6 +107,18 @@
       <div class="about__jobs">
         <div class="job">
           <img
+            src="../images/멋쟁이사자처럼.jpg"
+            alt="about__University__logo"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">Studying at LIKELION</p>
+            <p class="job__period">2022.03 ~ 2022.08</p>
+          </div>
+        </div>
+
+        <div class="job">
+          <img
             src="images/job__logo.png"
             alt="about__job__logo"
             class="job__logo"
@@ -119,13 +127,13 @@
             <p class="job__name">
               Working at On semiconductor as IT Technician
             </p>
-            <p class="job__period">2016.03 ~ ing</p>
+            <p class="job__period">2016.03 ~ 2022.02</p>
           </div>
         </div>
 
         <div class="job">
           <img
-            src="images/University.png"
+            src="../images/University.png"
             alt="about__University__logo"
             class="job__logo"
           />
@@ -140,10 +148,8 @@
     <section id="skills">
       <h1>Skills</h1>
       <h2>skills & Attributes</h2>
-      <p>
-        User와 커뮤니케이션을 통해 보완해본 경험이 있으며, 새로운 기술을
-        배우는데 열정적입니다. 팀 환경에서 일하거나, 혼자서 일할 수도 있습니다.
-      </p>
+      <p>글 쓰는 것과 지식 공유하는 것을 좋아하여 블로그에 꾸준히 기록하고 있습니다.</p>
+      <p>새로운 기술에 대한 호기심과 욕심이 있어 새로 배우는 것을 좋아합니다. 최근에는 타입스크립트로 블로그 활동을 하고 있습니다.</p>
       <div class="skillset">
         <div class="skillset__left">
           <h3 class="skillset__title">Skills</h3>
@@ -170,10 +176,10 @@
           <div class="skill">
             <div class="skill__description">
               <span>Javascript</span>
-              <span>65%</span>
+              <span>70%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value" style="width: 65%"></div>
+              <div class="skill__value" style="width: 70%"></div>
             </div>
           </div>
         </div>
@@ -182,14 +188,13 @@
             <h3 class="skillset__title">Tools</h3>
             <ul class="tools__list">
               <li><span>Visual Studio Code</span></li>
-              <li><span>IntelliJ</span></li>
-              <li><span>eclipse</span></li>
             </ul>
           </div>
           <div class="etc">
             <h3 class="skillset__title">Etc</h3>
             <ul class="etc__list">
-              <li><span>Git</span></li>
+              <li><span>Git & Github</span></li>
+              <li><span>Notion</span></li>
             </ul>
           </div>
         </div>
@@ -208,41 +213,41 @@
             Front-end <span class="category__count">2</span>
           </button>
           <button class="category__btn" data-filter="React">
-            React <span class="category__count">1</span>
+            React <span class="category__count">0</span>
           </button>
         </div>
         <div class="work__projects">
           <a
-            href="https://github.com/WebDevelop2/project1"
+            href="https://github.com/aydenote/60-market"
             class="project"
             target="blank"
             data-type="Front-end"
           >
             <img
-              src="images/project.PNG"
-              alt="The Cloth shop"
+              src="../images/마켓.png"
+              alt="60''마켓 프로젝트"
               class="project__img"
             />
             <div class="project__description">
-              <h3>The cloth Shop</h3>
-              <span>With HTML, CSS, JS</span>
+              <h3>e커머스 서비스</h3>
+              <span>HTML, CSS, JS</span>
             </div>
           </a>
 
           <a
-            href="https://github.com/WebDevelop2/MiniGame"
+            href="https://github.com/aydenote/Vending_Machine"
             class="project"
             target="blank"
             data-type="Front-end"
           >
             <img
-              src="images/Project_MiniGame.PNG"
-              alt="The Cloth shop"
+              src="../images/벤딩머신.png"
+              alt="콜라 자판기 프로젝트"
               class="project__img"
             />
             <div class="project__description">
-              <h3>Pull the Carrots game</h3>
-              <span>With HTML, CSS, JS</span>
+              <h3>콜라 자판기</h3>
+              <span>HTML, CSS, JS</span>
             </div>
           </a>
         </div>
@@ -252,43 +257,56 @@
     <section id="testimonials">
       <section class="testimonials__container">
         <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
+        <h3>동료 피드백</h3>
         <div class="testiAvatar">
         <div class="testimonials">
           <div class="testimonial">
             <img
-              src="images/testimonial/people.png"
+              src="../images/testimonial/people.png"
               alt="People"
               class="testimonial__avatar"
             />
             <div class="testimonial__speech-bubble">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                voluptatibus dolore ex excepturi ipsam illo quisquam, similique
-                possimus dolorem molestiae expedita! Totam quisquam sapiente
-                voluptates nulla magni excepturi quae? Est!
+                승수님의 강점은 팀원들보다 먼저 앞서서 도움을 드려야 한다는 자세입니다. 이러한 자세 덕분에 저희의 
+                질문에 있어 빠른 피드백이 가능하지 않았나 생각합니다. 또한, 다양한 해결 방법 제시도 가능할 수 있었다고 생각합니다. 
+                그리고 새로운 방법이 있을 때, 배우려고 노력하시는 부분도 강점이라고 생각합니다. 프로젝트 진행을 하시다가 부딪히는 부분이 생겼을 때 빠르게 공유하셔서 해결점을 찾아가는 모습도 강점이라고 
+                생각합니다.
               </p>
-              <p class="name"><a href="">dongseok</a> / Samsung</p>
+              <p class="name"><a href="">박도겸</a> / 팀 프로젝트 동료</p>
             </div>
           </div>
         </div>
           <div class="testimonial">
             <div class="testimonial__speech-bubble">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                voluptatibus dolore ex excepturi ipsam illo quisquam, similique
-                possimus dolorem molestiae expedita! Totam quisquam sapiente
-                voluptates nulla magni excepturi quae? Est!
+                깃을 사용하는 것에 있어서 많이 두려웠고, 많이 어려웠지만 승수님이 깃 팀장을 맡아주셔서 책임감 있게 
+                쉽게 설명해주시고, 질문을 해도 다 친절하게 잘 알려주시고 승수님 최고입니다!!!!
               </p>
-              <p class="name"><a href="">heeseung</a> / LG</p>
+              <p class="name"><a href="">임홍렬</a> / 팀 프로젝트 동료</p>
             </div>
             <img
-              src="images/testimonial/people.png"
+              src="../images/testimonial/people.png"
               alt="People"
               class="testimonial__avatar"
             />
           </div>
         </div>
+        <div class="testimonial">
+          <img
+            src="../images/testimonial/people.png"
+            alt="People"
+            class="testimonial__avatar"
+          />
+          <div class="testimonial__speech-bubble">
+            <p>
+              개인적인 일정이 있었음에도 불구하고 팀끼리 약속한 기한내에 본인이 맡은 분량을 끝내려고 노력하는 
+              성실함을 갖추고 있고, 사소한 일에서도 불만을 토로하지 않는 긍정적인 마인드를 가졌다.
+            </p>
+            <p class="name"><a href="">전유진</a> / 팀 프로젝트 동료</p>
+          </div>
+        </div>
+      </div>
       </section>
     </section>
     <!-- Contact -->
@@ -296,17 +314,17 @@
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">dslgpgh@gmail.com</h2>
       <div class="contact__links">
-        <a href="https://github.com/WebDevelop2" target="_blank">
+        <a href="https://github.com/aydenote" target="_blank">
           <i class="fab fa-github"></i>
         </a>
         <a
-          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl&pli=1#inbox?compose=GTvVlcSBncCFqfKjWTDzfFtDTltfFbjMJmtmwnhtcHVqmpfrGnCfBZZsQcFBqFpXHtZsbqrVXwzdC"
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl&pli=1#inbox?compose=CllgCJfrLTZfbsKwRcvGWqdNTPJLjZnnZPmTtXCtLVFbcMJxGQkCWgKLpxDNwxdbFvnRTNHPBsV"
           target="_blank"
         >
           <i class="fas fa-envelope-square"></i>
         </a>
       </div>
-      <p class="contact__rights">2021 Ayden - All rights reserved</p>
+      <p class="contact__rights">2022 Ayden - All rights reserved</p>
     </section>
 
     <!-- Arrow top button -->

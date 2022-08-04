@@ -158,13 +158,14 @@ button {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 2px solid var(--color-light-white);
   margin-top: 40px;
+  object-fit: cover;
+  object-position: top;
 }
-.home__title,
-.home__description {
+.home__title {
   color: var(--color-white);
 }
+
 .home__contact {
   font-size: var(--font-regular);
   color: var(--color-white);
@@ -249,6 +250,7 @@ section {
 #skills {
   background-color: #ffc4ff;
   max-width: 1200px;
+  margin-top: 16px;
 }
 
 .skill {
