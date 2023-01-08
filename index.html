@@ -55,7 +55,7 @@
     <section id="home">
       
         <img
-          src="./images/프로필.jpg"
+          src="./images/profile-pic.png"
           alt="Ayden's Profile"
           class="home__avatar"
         />
@@ -71,31 +71,37 @@
     <!-- About -->
     <section id="about">
       <h1>About me</h1>
-      <p>사용자 환경 개선에 가치를 알고 사용자 중심으로 생각하기 위해 노력 중입니다.</p>
-      <p>협업의 가치를 소중하게 생각하고 함께 일하고 싶은 개발자를 목표로 성장하고 있습니다.</p>
+      <h2 class="about__subTitle">비효율적이고 반복되는 일을 개선하는 것을 좋아합니다.</h2>
+      <div class="about__content__box">
+        <p class="about__content">1. 60” 마켓 프로젝트에서 리소스를 감소시켰습니다. 마크업이 비슷한 페이지들의 동일한 부분을 하나의 HTML 파일에서 작성하고 다른 부분을 JavaScript로 구현하여 HTML 파일을 기존보다 2개 감소시킨 경험이 있습니다.</p>
+        <p class="about__content">2. 반도체 회사에서 작업자 불합리 사항을 파악하여 개선하였습니다. 반도체 설비 데이터를 확인하는 윈도우 배치프로그램을 만들고 배포하여 작업 동선 5m 감소와 매주 60분 작업 시간을 절약시킨 경험이 있습니다.</p>
+      </div>
       <div class="about__majors">
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-html5"></i>
-          </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">HTML</div>
-        </div>
-
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-css3-alt"></i>
-          </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">CSS</div>
-        </div>
-
-        <div class="major">
-          <div class="major__icon">
             <i class="fab fa-js"></i>
+
           </div>
           <h2 class="major__title">Front-end</h2>
-          <div class="major__description">Javascript</div>
+          <div class="major__description">React</div>
+          <div class="major__description">JavaScript</div>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-node"></i>
+          </div>
+          <h2 class="major__title">Back-end</h2>
+          <div class="major__description">Node.js</div>
+        </div>
+
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h2 class="major__title">Communication</h2>
+          <div class="major__description">Git</div>
+          <div class="major__description">Notion</div>
         </div>
       </div>
       <div class="about__jobs">
@@ -207,12 +213,29 @@
             Front-end <span class="category__count">2</span>
           </button>
           <button class="category__btn" data-filter="React">
-            React <span class="category__count">0</span>
+            React <span class="category__count">1</span>
           </button>
         </div>
         <div class="work__projects">
           <a
-            href="https://github.com/aydenote/60-market"
+          href="https://github.com/aydenote/React-open-market"
+          class="project"
+          target="blank"
+          data-type="React"
+        >
+          <img
+            src="./images/re react.png"
+            alt="React 마켓 프로젝트"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>e커머스 서비스</h3>
+            <span>React</span>
+          </div>
+        </a>
+
+          <a
+            href="https://github.com/aydenote/60_market"
             class="project"
             target="blank"
             data-type="Front-end"
@@ -307,6 +330,7 @@
     <section id="contact">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">dslgpgh@gmail.com</h2>
+      <a class="contact__email" href="https://velog.io/@aydenote">https://velog.io/@aydenote</a>
       <div class="contact__links">
         <a href="https://github.com/aydenote" target="_blank">
           <i class="fab fa-github"></i>
@@ -318,7 +342,7 @@
           <i class="fas fa-envelope-square"></i>
         </a>
       </div>
-      <p class="contact__rights">2022 Ayden - All rights reserved</p>
+      <p class="contact__rights">2023 Ayden - All rights reserved</p>
     </section>
 
     <!-- Arrow top button -->

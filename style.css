@@ -149,9 +149,8 @@ button {
 }
 /* Home */
 #home {
-  background: url("images/logo.png") center/cover no-repeat;
+  background: url('images/logo.png') center/cover no-repeat;
   text-align: center;
-  height: 600px;
 }
 
 .home__avatar {
@@ -189,6 +188,7 @@ section {
 }
 
 /* About */
+
 .about__majors {
   display: flex;
   justify-content: space-between;
@@ -196,15 +196,28 @@ section {
   text-align: center;
 }
 
+.about__subTitle {
+  color: var(--color-dark-Emerald);
+}
+
+.about__content__box {
+  margin: 20px 40px;
+}
+
+.about__content {
+  margin: 20px 0;
+  word-break: keep-all;
+}
+
 .major__icon {
   width: 170px;
   height: 170px;
+  margin: 0 auto 16px;
   line-height: 170px;
   font-size: 70px;
-  color: var(--color-orange);
   border: 1px solid var(--color-orange);
   border-radius: 50%;
-  margin-bottom: 16px;
+  color: var(--color-orange);
 }
 .major__title,
 .major__description {
@@ -400,10 +413,10 @@ span {
 }
 
 .project__description h3:after {
-  content: "";
+  content: '';
   display: block;
   position: relative;
-  left: 50%;
+  left: 48%;
   width: 40px;
   height: 2px;
   margin-left: -12px;
@@ -451,7 +464,16 @@ span {
 
 /* Contact */
 #contact {
+  padding: 20px;
   background-color: var(--color-pink);
+}
+
+.contact__email {
+  margin-top: 10pxc;
+}
+
+.contact__rights {
+  margin: 0;
 }
 
 .contact__title,
