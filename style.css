@@ -373,6 +373,29 @@ section {
   background-color: var(--color-light-white);
 }
 
+.project__modal {
+  display: none;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  height: 100%;
+  width: 100%;
+}
+
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
 .project.invisible {
   display: none;
 }
