@@ -8,6 +8,7 @@
     <meta name="description" content="Portfolio for world-renowed Web engieer SS" />
     <meta name="author" content="SS" />
     <link rel="icon" type="image/png" href="images/logo.png" />
+    <script src="https://kit.fontawesome.com/d504906a3b.js" crossorigin="anonymous"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
@@ -47,7 +48,7 @@
         <img src="./images/profile-pic.png" alt="Ayden's Profile" class="home__avatar" />
         <h1 class="home__title">
           안녕하세요, <br />
-          사용자 중심으로 사고하는 개발자 최승수입니다.
+          신입 프론트엔드 개발자 최승수입니다.
         </h1>
         <button class="home__contact" data-link="#contact">contact me !!!</button>
       </section>
@@ -127,8 +128,8 @@
       <h2>skills & Attributes</h2>
       <p>글 쓰는 것과 지식 공유하는 것을 좋아하여 블로그에 꾸준히 기록하고 있습니다.</p>
       <p>
-        새로운 기술에 대한 호기심과 욕심이 있어 새로 배우는 것을 좋아합니다. 최근에는 타입스크립트로 블로그 활동을 하고
-        있습니다.
+        새로운 기술에 대한 호기심과 욕심이 있어 새로 배우는 것을 좋아합니다. <br />
+        최근에는 타입스크립트로 블로그 활동을 이어가고 있습니다.
       </p>
       <div class="skillset">
         <div class="skillset__left">
@@ -160,6 +161,16 @@
             </div>
             <div class="skill__bar">
               <div class="skill__value" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="skill__description">
+              <span>React</span>
+              <span>70%</span>
+            </div>
+            <div class="skill__bar">
+              <div class="skill__value" style="width: 70%"></div>
             </div>
           </div>
         </div>
@@ -206,9 +217,58 @@
 
           <article class="project__modal">
             <div class="modal__content">
-              <button class="modal__cancel">X</button>
-              <p>1</p>
-              <p>1</p>
+              <header class="modal__project header">
+                <h3 class="modal__project title">60"마켓</h3>
+                <button class="modal__cancel">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </header>
+              <section class="modal__project container">
+                <div class="modal__project image">
+                  <img src="./images/re react.png" alt="React 마켓 프로젝트" class="project__img" />
+                </div>
+                <div class="modal__project description">
+                  <p>시간을 구매하는 소비자와 시간을 판매하는 판매자를 연결하는 오픈 마켓 서비스입니다.</p>
+                  <p>
+                    <strong>바닐라 자바스크립트</strong>를 사용하였으며, fetch와 REST API를 활용한 비동기 통신으로
+                    구현하였습니다.
+                  </p>
+                  <div class="project__info">
+                    <div class="info__container">
+                      <p class="info__title">✔ 개발인원</p>
+                      <p>1명</p>
+                    </div>
+                    <div>
+                      <p>✔ 기술스택</p>
+                      <p>JavaScript, CSS, HTML</p>
+                    </div>
+                    <div>
+                      <p>✔ 배포</p>
+                      <p><a href="https://beamish-syrniki-7895d7.netlify.app/" target="_blank">배포 링크</a></p>
+                    </div>
+                    <div>
+                      <p>✔ Github</p>
+                      <p><a href="https://github.com/aydenote/60_market">60"마켓 깃허브 링크</a></p>
+                    </div>
+                    <div>
+                      <p>✔ 나의 기여도</p>
+                      <p></p>
+                    </div>
+                    <div>
+                      <p>✔ 프로젝트 블로그</p>
+                      <p>
+                        <a
+                          href="https://velog.io/@aydenote/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A7%84%ED%96%89-%EC%8B%9C-%EC%96%B4%EB%A0%A4%EC%9B%80#7-%EB%8F%99%EB%A3%8C-%ED%8F%89%EA%B0%80"
+                          >팀 프로젝트 블로그</a
+                        >
+                        <a href="https://velog.io/@aydenote/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-SPA-%EA%B5%AC%ED%98%84"
+                          >프로젝트 리팩토링 블로그</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </article>
 
@@ -225,9 +285,58 @@
 
           <article class="project__modal">
             <div class="modal__content">
-              <button class="modal__cancel">X</button>
-              <p>2</p>
-              <p>2</p>
+              <header class="modal__project header">
+                <h3 class="modal__project title">60"마켓</h3>
+                <button class="modal__cancel">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </header>
+              <section class="modal__project container">
+                <div class="modal__project image">
+                  <img src="./images/마켓.PNG" alt="React 마켓 프로젝트" class="project__img" />
+                </div>
+                <div class="modal__project description">
+                  <p>시간을 구매하는 소비자와 시간을 판매하는 판매자를 연결하는 오픈 마켓 서비스입니다.</p>
+                  <p>
+                    <strong>바닐라 자바스크립트</strong>를 사용하였으며, fetch와 REST API를 활용한 비동기 통신으로
+                    구현하였습니다.
+                  </p>
+                  <div class="project__info">
+                    <div class="info__container">
+                      <p class="info__title">✔ 개발인원</p>
+                      <p>4명</p>
+                    </div>
+                    <div>
+                      <p>✔ 기술스택</p>
+                      <p>JavaScript, CSS, HTML</p>
+                    </div>
+                    <div>
+                      <p>✔ 배포</p>
+                      <p><a href="https://beamish-syrniki-7895d7.netlify.app/" target="_blank">배포 링크</a></p>
+                    </div>
+                    <div>
+                      <p>✔ Github</p>
+                      <p><a href="https://github.com/aydenote/60_market">60"마켓 깃허브 링크</a></p>
+                    </div>
+                    <div>
+                      <p>✔ 나의 기여도</p>
+                      <p></p>
+                    </div>
+                    <div>
+                      <p>✔ 프로젝트 블로그</p>
+                      <p>
+                        <a
+                          href="https://velog.io/@aydenote/%ED%8C%80-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%A7%84%ED%96%89-%EC%8B%9C-%EC%96%B4%EB%A0%A4%EC%9B%80#7-%EB%8F%99%EB%A3%8C-%ED%8F%89%EA%B0%80"
+                          >팀 프로젝트 블로그</a
+                        >
+                        <a href="https://velog.io/@aydenote/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-SPA-%EA%B5%AC%ED%98%84"
+                          >프로젝트 리팩토링 블로그</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </article>
 
